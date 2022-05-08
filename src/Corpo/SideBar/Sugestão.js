@@ -9,7 +9,7 @@ export default function Sugestão (props) {
                 </div>
             </div>
 
-            <div class="seguir">{props.seguir}</div>
+            <div class="seguir">{props.seguir}</div>   
             </div>
     )
 }
