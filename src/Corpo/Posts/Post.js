@@ -1,7 +1,7 @@
 import React from 'react';
 let contador=0
 export default function Post (props) {
-    const [heart, setHeart] = React.useState(<ion-icon onClick={incrementar} class="aloha1" name="heart-outline"></ion-icon>);
+    const [heart, setHeart] = React.useState(<ion-icon onClick={incrementar} class="heart1" name="heart-outline"></ion-icon>);
     return (
     <div class="post">
         <div class="topo">
@@ -40,18 +40,18 @@ export default function Post (props) {
     </div>
 )
     function incrementar1 (){
-            setHeart(<ion-icon onClick={incrementar} class="aloha" name="heart"></ion-icon>)
+            setHeart(<ion-icon onClick={incrementar} class="heart2" name="heart"></ion-icon>)
             contador=1
 }
 function incrementar (){
     if(contador==1)
     {
-        setHeart(<ion-icon onClick={incrementar} class="aloha1" name="heart-outline"></ion-icon>)
+        setHeart(<ion-icon onClick={incrementar} class="heart1" name="heart-outline"></ion-icon>)
         contador=0
     } 
     else
     {
-        setHeart(<ion-icon onClick={incrementar} class="aloha" name="heart"></ion-icon>)
+        setHeart(<ion-icon onClick={incrementar} class="heart2" name="heart"></ion-icon>)
         contador=1
     }
 }
