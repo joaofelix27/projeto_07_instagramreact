@@ -1,6 +1,6 @@
 import Topo from './Topo/Topo';
 import Corpo from './Corpo/Corpo';
-import Base from './Base';
+import Base from './Base/Base';
 
 export default function App() {
     return (
